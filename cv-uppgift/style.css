@@ -1,7 +1,25 @@
-h2 {
-   
-        background-color: #332EBF;
-        width: 50%;
-        height: 36%;
-    
+body {
+  background-image: url("me.jpg");                  
 }
+h2 {
+  display: flex;
+  justify-content: center;
+  background-color: #59e9ca;
+}
+body{
+ background-color: aliceblue;
+}
+.grid{
+display: flex;
+justify-content: space-around; 
+background-color: #60CB3F;
+width: 100%;
+}
+.ommig{
+background-color: #60CB3F;
+ width: 50%;  
+}
+.reza{
+background-color:#60CB3F;
+width: 50%;      
+ }
