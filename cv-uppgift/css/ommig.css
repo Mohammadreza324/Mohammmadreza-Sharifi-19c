@@ -2,7 +2,7 @@ div{
     color: #2F83F2;
     font-size: 20px;
     margin:0px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     text-align: center;
 
 }
@@ -12,10 +12,16 @@ div{
     font-style: italic;/* stlen på texten, just nu texten luter sig åt höger*/ 
     font-weight: 100;
     text-align: center;
-    text-decoration: underline;/* om det ska ha under linje eller inte, om man ta de none på en läkad text under injen går bort*/
+    /*text-decoration: underline; om det ska ha under linje eller inte, om man ta de none på en läkad text under injen går bort*/
     text-indent: 50px; /* texten flytter ut till höger för 50px, kan användas för det första linjen att visa stycken*/
     text-transform: capitalize; /* capitilize= alla ord börjar med stor bokstav, uppercase= alla bokstaver blir stor, lowercase alla or blir liten*/
-    letter-spacing: 10px; /* avståndet mellan varje bokstav*/
+   /*letter-spacing: 10px; avståndet mellan varje bokstav*/
     word-spacing: 10px;/* avståndet mellan varje ord*/
     line-height: 30px; /* avståndet mellan övre injen och nedre linje*/
+}
+div .black{
+    justify-content: end; 
+    align-items: center;
+    width: 1000px;
+    height: 1000px;
 }

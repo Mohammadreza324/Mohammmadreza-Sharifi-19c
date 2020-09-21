@@ -1,0 +1,31 @@
+.minatidigarejobb h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: #1452fc;
+    line-height: 40px;
+}
+.minatidigarejobb p{
+    font-size: 24px;
+    color: #000000;
+    background-color: #ffffff77;
+    line-height: 35px;
+}
+.framtiden p{
+    font-size: 24px ;
+    color: black;
+    background-color:  #ffffff77;
+    line-height: 35px;
+}
+.framtiden h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #4407E6;
+    line-height: 20px;
+}
+
+body{
+    background-image: url(../jpg/camera.jpg);
+    background-size: cover;
+}
