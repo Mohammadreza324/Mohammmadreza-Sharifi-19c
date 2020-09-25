@@ -6,6 +6,12 @@ body{
     background-color:#faaf7a60;
 }
 .wrapper{
+    width: 100%;
+}
+.img-banner{
+    
+}
+.wrapper{
     margin: 0 auto 0 80px;
     width: 1000px;
     background-color: whitesmoke;
