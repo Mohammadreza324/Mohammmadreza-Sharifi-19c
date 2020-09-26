@@ -8,14 +8,22 @@ body{
 .wrapper{
     width: 100%;
 }
-.img-banner{
-    
+.img-black{
+    width: 60%;
+    height: 700px;
+    padding: 20px 80px 0px;
+}
+.img-random{
+    width: 70%;
+    height: 400px;
+    padding: 20px 0px 0px;    
 }
 .wrapper{
     margin: 0 auto 0 80px;
     width: 1000px;
     background-color: whitesmoke;
 }
+
 nav{
     width: 100%;
     height: 100px;
@@ -41,3 +49,6 @@ ul li a{
 ul li a:hover{
     color: red;
 }
+/*@media only screen and () {
+
+} det här betyder att html ska utföra de cod som som finns i {} om det som står i () är saant*/
