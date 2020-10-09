@@ -1,0 +1,12 @@
+.container{
+    display:flex;
+}
+
+.item{
+    background-color: rgba(135, 238, 66, 0.897);
+    flex-grow: 1;
+    height: 100px;
+}
+.item.item{
+    margin-left: 2%;
+}
