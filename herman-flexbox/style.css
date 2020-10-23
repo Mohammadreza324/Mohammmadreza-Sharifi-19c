@@ -24,5 +24,15 @@
     margin-top: 30px;
     color: white;
     text-align: center;
-    
+}
+.container.kläder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container.kläder.kläder{
+    width: 32%;
+    padding-bottom: 32%;
+    margin-bottom: 2%;
+    position: relative;
 }
