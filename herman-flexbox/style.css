@@ -20,19 +20,31 @@
     transition: 0.65s;
 }
 .Rubrik{
-    background-image: url(../herman-flexbox/img/pexels-terje-sollie-298864.jpg);
+    border: 1px solid #000000b6;
+    background-color: white;
     margin-top: 30px;
-    color: white;
+    color: black;
     text-align: center;
 }
-.container.kläder{
+.containerkläder{
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.container.kläder.kläder{
+.kläder{
     width: 32%;
     padding-bottom: 32%;
     margin-bottom: 2%;
+    justify-content: center;
+
     position: relative;
+    border-radius: 6px;
+    background-color: #f5dbb4;
+    border: 1px solid #e4ce6eb6;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px rgba(0,90,250,0.05), 0 4px 4px rgba(0,90,250,0.05), 0 8px 8px rgba(0,90,250,0.05), 0 16px 16px rgba(0,90,250,0.05);
+    text-align: center;
+    padding: 70px;
 }
+
