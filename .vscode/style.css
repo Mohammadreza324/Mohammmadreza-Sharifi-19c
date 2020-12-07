@@ -1,0 +1,53 @@
+/**/
+/*bootstrap css*/
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+  }
+  .nav-item {
+    margin-bottom: -1px;
+  }
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+
+  .justify-content-center {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .d-flex{
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .d-inline-flex{
+    display: inline-flex;
+  }
+  .p-2{
+    padding: 0.5rem;
+  }
+
+  /*här efter kommer mina scc*/
+
+  .d-flexjustify-content-center{
+    justify-content: end;
+    background-color: rgb(25, 135, 172);
+  }
+
+
