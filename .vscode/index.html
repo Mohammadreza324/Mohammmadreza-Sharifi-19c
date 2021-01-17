@@ -2,106 +2,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css"> <!-- länkar bootstrap för att ta css därifrån. -->
+    <link rel="stylesheet" href="style.css"> <!-- efter boots trap kommer mina egna cod-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-Reza</title>
 </head>
 <body>
-    <nav>
-        <ul class="nav justify-content-center nav-tabs" class="nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">html</a>
+    <nav> <!-- här är öppningen till nav tagg-->
+        <ul class="nav justify-content-center nav-tabs" class="nav-tabs"> <!-- Detta är klass tagen från bootstrap för attge det resultatet som jag vill få för navbar. använde ul för en oordnad lista-->
+            <li class="nav-item"> <!--ett nytt calss för nav listan längst upp -->
+                <a class="nav-link active" href="#html">html</a> <!--länkar de nav texter/alternativ till vart i hemsidan ligger innehållet med # symbolen.  -->
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">local bootstrap</a>
+                <a class="nav-link" href="#local bootstrap">local bootstrap</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">class</a>
+                <a class="nav-link" href="#class">class</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">http</a>
+                <a class="nav-link" href="#http">http</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">https</a>
+                <a class="nav-link" href="#https">https</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">element</a>
+                <a class="nav-link" href="#element">element</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">flexbox</a>
+                <a class="nav-link" href="#flexbox">flexbox</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">ID</a>
+                <a class="nav-link" href="#ID">ID</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">compressed data</a>
+                <a class="nav-link" href="#compressed data">compressed data</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">code snippets</a>
+                <a class="nav-link" href="#code snippets">code snippets</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">responsive</a>
+                <a class="nav-link" href="#responsive">responsive</a>
             </li> 
         </ul>
-    </nav>
+    </nav> <!-- stängtag till nav -->
 
-    <div class="d-body">
-        <div class="d-flex flex-column bd-highlight mb-3">
+    <div class="d-body"> <!-- användet div och väljer ett eget class namn till det för att kunna ändra på allt om det behövs -->
+        <div class="d-flex flex-column bd-highlight mb-3"><!-- en till class där alla flexbox ligger i som jag har ändrat om med hur stor avstånd ska de ligga från varandra. css är tagen -->
+            <div class="p-2 bd-highlight"> <!--denna class är till varannan box och det gäller samma för varje flexbox  -->
+                <a name="html"></a> <!-- Här har jag valt ett namn för denna länken vilket jag nämnde i nav länken för varje namn eller alternativ. Det kommer funka så att när man klickar på det man vill läsa om sedan så går man till det i samma sida -->
+                <h1 class="h1">html</h1> <!-- Anvädet h1 för att texten ska se ut som en rubrik, för att synas först -->
+                <h2 class="h2">HyperText Markup Language</h2> <!-- h2 är för att texten ska se lite mindre ut än det h1 texten och innehåller något viktigt-->
+                <p class="text-center">Html står för Hyper Text Markup Language vilket är en grunden för en hemsida som vi ser i internet tillsammans med css som gör hemsidan finare. HTML bygger upp strukturen i hemsidan om var ska rubrik, texter stå och vad ska synas i hemsidan. Det går också att byfoga bilder i HTML. Det är som en språk som man kan bygga hemsidor med, HTML-kod är ett egen kod. Css i HMTL gör designen och Javascript funktionalitet i hemsidan.</p> <!-- p är för pragraph tag där texten ska skrivas. har valt calss för detta också för att jag ville att texten skulle se på speciellt sätt -->
+            </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"> <img src="" alt="element"> </h1>
-                <h2 class="h2">html</h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="local bootstrap"></a>
+                <h1 class="h1">local bootstrap</h1> 
+                <p class="text-center">ned laddade bootstrap som är länkad till koden är en local bootstrap. Man länkar det bootstrap för att få snabbare svar.</p> 
+            </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="class"></a>
+                <h1 class="h1">class</h1> 
+                <p class="text-center">Classer används för att namn teckna eller peka på en viss element eller fler element med samma class. Kan användas flera gånger och en element kan ha fler class. Sedan namnet på class används för att deisgna elementen i css.</p> 
+            </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="http"></a>
+                <h1 class="h1">http</h1>
+                <h2 class="h2">HyperText Transfer Protocol</h2> 
+                <p class="text-center">HTTP är en komunikationsprotokol som används för att hämta webbsidor från internat via World Wide Web. Http används för att en webbläsare ska hämta infrormation från webbbserver.
+                Man kan säga att HTTP styr hur data och infrormation ska tas emot ellerskickas mellan webbläsaren och server.</p> 
+            </div>
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="https"></a>
+                <h1 class="h1">https</h1>
+                <h2 class="h2">Hypertext Transfer Protocol Secure</h2> 
+                <p class="text-center">Det använs också för att skicka data genom internet (www) som HTTP. HTTP använder sig av SSL (Secure Sockets Layer) för en säker överföring men HTTPS anväder sig av säkerhetprogram för anslutning och överföring. Alla hemsidor måste ha SSL och de nya webbsidor anväder sig av HTTPS.</p> </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="element"></a>
+                <img class="card-img-top" src="element.png" alt="element"> <!-- img tag är för att lägga till biler, använde bootstrap class, länkade bilden och beskrev bilden med ett ord -->
+                <h2 class="h2">element</h2> 
+                <p class="text-center">Elemnt vestår av två tag det ena är start tag och det andra är sluttag. och allt annat som skrivs i mellan de två tag är också en del av element. </p> 
+            </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="flexbox"></a>
+                <img class="card-img-top" src="flexbox.png" alt="flexbox">
+                <h1 class="h1">flexbox</h1> 
+                <p class="text-center">Flexible Box : Är ett sätt att strukturera din hemsida och ändra om hur det allt ska lägga till och ändra storlek. Man kan ändra på hmtl-element och layout i koden.</p> 
+            </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="ID"></a>
+                <h1 class="h1">ID</h1> 
+                <p class="text-center">Det används för att addrassera en enda specifik element i css. Man använder id bara en gång och får användas en enda gång i varje html-kode. Det används när man vill ändra på bara de element med samma id.</p> 
+            </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
-        <div class="d-flex flex-column bd-highlight mb-3">
+                <a name="compressed data"></a>
+                <h1 class="h1">compressed data</h1> 
+                <p class="text-center">Är ett sätt att kompimera data för att det blir lättare att överföra genom nätet och ladda upp det på plattan. Alltså minskning av data storleken.</p><p class="text-center">Det hjälper ledet till att det får mindre lagringsutrymme.</p> 
+            </div>
+        
+        
             <div class="p-2 bd-highlight">
-                <h1 class="h1"></h1>
-                <h2 class="h2"></h2> 
-                <p></p> </div>
-        </div>
+                <a name="code snippets"></a>
+                <h1 class="h1">code snippets</h1> 
+                <p class="text-center">Utdrag är en programmeringsterm för en liten region med återanvändbar källkod, maskinkod eller text. Vanligtvis är dessa formellt definierade operativa enheter som ska införlivas i större programmeringsmoduler</p> 
+            </div>
+        
+        
+            <div class="p-2 bd-highlight">
+                <a name="responsive"></a>
+                <img class="card-img-top" src="responsive.png" width="20%" alt="responsive">
+                <h1 class="h1">responsive</h1> 
+                <p class="text-center">Betyder att sidan är responsive och det går att använda sig av det och kan användas. Det kan betyda också att det är anpassad till andra enheter som mac, surfplatta, dator och mm.</p> 
+            </div>
+        
+        
+            <div class="p-2 bd-highlight">
+                <a name="Meta"></a>
+                <h1 class="h1">Meta</h1> 
+                <p class="text-center">Meta data ger information om websidan till browser. Det kan innehålla sökord, författare, länkar till scc och saker som inte synd i websidan men påverkar egenskaperna hus websidan. Meta används i head och inte i body.</p> 
+            </div>
+        
+        
+            <div class="p-2 bd-highlight">
+                <a name="CDN"></a>
+                <h1 class="h1">CDN</h1>
+                <h2 class="h2">Content Delivery Network</h2> 
+                <p class="text-center">CDN gör det möjligt att ladda upp webbsidor snabbare genom att lagra CDN-filer i cachas vertion på flera grafiska område runt om hela världen, detta kallas för poPs. Det som CDN gör är att du blir närmare till webbsidor vilket leder till mindre förseningar med att ladda upp webbplatsinnehåll mellan servern och användaren.</p> 
+            </div>
+        
+        
+            <div class="p-2 bd-highlight">
+                <a name="JQuery"></a>
+                <img class="card-img-top" src="jequery.png" width="20%" alt="jequery">
+                <h1 class="h1">JQuery</h1>
+                <h2 class="h2">write less, do more</h2> 
+                <p class="text-center">JQuery är ett javascript-bibliotek som är tänk att förenkla HTML. Det finns för att göra det mycket enklare att använda Javascript.</p>
+                <p class="text-center"> JQuery är en väldigt bred program som fungerar på alla plattform och därför använde många kända företag detta, som:</p>
+                <ol>
+                    <li>Google</li>
+                    <li>Microsoft</li>
+                    <li>IBM</li>
+                </ol>
+            </div>
+        
+        
+            <div class="p-2 bd-highlight">
+                <a name="Grid"></a>
+                <img class="card-img-top" src="grid.png" width="10%" alt="grid html">
+                <h1 class="h1">Grid</h1> 
+                <p class="text-center">är ett nytt sätt att skapa layouts med hjälp av css. man kan göra rutnäts med hjälp av kolumner och rader. Med grid kan man nu ändra på vertikal och horisontell.</p> 
+            </div>
         </div>
     </div>
 
