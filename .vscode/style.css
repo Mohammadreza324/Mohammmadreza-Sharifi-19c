@@ -1,5 +1,6 @@
 /**/
-/*bootstrap css*/
+/*bootstrap css
+css kommer läsa bootstrap sedan kommer mina ändringar med samma class tag*/
 .nav {
     display: -ms-flexbox;
     display: flex;
