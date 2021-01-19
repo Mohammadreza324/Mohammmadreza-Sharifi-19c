@@ -49,26 +49,20 @@
   body{
     background-color: rgba(255, 255, 255, 0.801);
   }
-  nav{
-    background-color: rgba(235, 197, 197, 0.507);
+  .fixed-top{
+    background-color: rgb(51, 49, 50);
   }
   .d-flexjustify-content-center{
     justify-content: end;
   }
-
-  .d-flex{
-    margin-top: 8px;
-    
-  }
   .p-2{
-    padding: 0px;
     border: 5px solid #a8f59eab;
   }
   .d-flex .p-2{
     background-color: rgb(70, 219, 70);
   }
   .d-body{
-    padding: 0px ;
+    margin-top: 40px;
   }
   .h1{
     font-size: 26px;
