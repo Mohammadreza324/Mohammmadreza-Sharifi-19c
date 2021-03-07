@@ -1,0 +1,24 @@
+antal tärningkast: 10 
+ettor: 0, sannolikhet 0.0 
+tvåor: 3, sannolikhet 0.3 
+treor: 4, sannolikhet 0.4 
+fyror: 1, sannolikhet 0.1 
+femmor: 1, sannolikhet 0.1 
+sexor: 1, sannolikhet 0.1 
+
+antal tärningkast: 100 
+ettor: 16, sannolikhet 0.16 
+tvåor: 21, sannolikhet 0.21 
+treor: 12, sannolikhet 0.12 
+fyror: 23, sannolikhet 0.23 
+femmor: 23, sannolikhet 0.23 
+sexor: 15, sannolikhet 0.15 
+
+antal tärningkast: 1000 
+ettor: 199, sannolikhet 0.199 
+tvåor: 206, sannolikhet 0.206 
+treor: 199, sannolikhet 0.199 
+fyror: 165, sannolikhet 0.165 
+femmor: 173, sannolikhet 0.173 
+sexor: 168, sannolikhet 0.168 
+

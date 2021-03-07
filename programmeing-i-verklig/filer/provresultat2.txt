@@ -1,0 +1,29 @@
+
+f 
+Sven Erik Karlsson 13 
+Fredrika Ulven 10 
+
+e 
+Adam Gustafsson 25 
+Emil Johansson 23 
+Ida Håkansson 23 
+Hanna Karlsson 23 
+Håkan Håkanson 24 
+
+d 
+Emma Boden 32 
+Karl Karlsson 32 
+Bose Bosseson 32 
+Jonas Jonasson 31 
+Erik Eriksson 31 
+
+c 
+Ove Karlsten 41 
+Ella Ester 41 
+Johan Johansson 42 
+
+b 
+Gore Bord 55 
+
+a 
+Jakob Kallander 65 
