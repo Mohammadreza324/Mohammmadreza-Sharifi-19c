@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://koda.nu/simple.js">
+
+    var cat = {x : 100, y : 100, speed: 40};
+    circle(100, 100, 20, "red");
+    hideMouse();
+    
+    playSound("http://spelprogrammering.nu/ljud/musik/Auf_Wiedersehen_Monty_01")
+
+    function update(){
+      clearScreen();
+      fill("black")
+      circle(mouse.x, mouse.y, 30, "red");
+      circle(cat.x, cat.y, 30, "blue");
+      if(keyboard.d){
+        cat.x += cat.speed;
+      }
+      if(keyboard.a){
+        cat.x -= cat.speed;
+      }
+      if(keyboard.w){
+        cat.y -= cat.speed;
+      }
+      if(keyboard.s){
+        cat.y+= cat.speed;
+      }
+      var d = distance(cat, mouse);
+      if ( d < 60){
+        text(50, 50, 20,"game over", "red")
+        showMouse();
+        stopUpdate();
+      }
+      
+      
+    }
+      
+      </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
