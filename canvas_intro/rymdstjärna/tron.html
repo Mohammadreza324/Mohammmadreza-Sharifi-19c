@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://koda.nu/simple.js">
+        fill("green")
+        rectangle(5, 5, totalWidth-10, totalHeight-10, "black")
+        var player = {x: 100, y: 100, size: 5, xspeed: 5, yspeed:0};
+        function update()
+        {
+            rectangle(player.x, player.y, player.size, player.size, "green");
+            player.x += player.xspeed;
+            player.y += player.yspeed;
+            
+            if (keyboard.w)
+            {
+            player.yspeed = -5;
+            player.xspeed = 0;
+            }
+            if (keyboard.s)
+            {
+            player.yspeed = 5;
+            player.xspeed = 0;
+            }
+            if (keyboard.a)
+            {
+            player.yspeed = 0;
+            player.xspeed = -5;
+            }
+            if (keyboard.d)
+            {
+            player.yspeed = 0;
+            player.xspeed = 5;
+            }
+            if(getPixel(player.x, player.y).green !=0 )
+            stopUpdate();
+        
+        
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
