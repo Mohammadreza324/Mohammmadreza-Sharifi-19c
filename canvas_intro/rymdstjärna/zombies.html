@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://koda.nu/simple.js">
+    <script src="https://spelprogrammering.nu/simple.js">
 
-    var cat = {x : 100, y : 100, speed: 40};
-    circle(100, 100, 20, "red");
-    hideMouse();
-    
-    playSound("http://spelprogrammering.nu/ljud/musik/Auf_Wiedersehen_Monty_01")
-
+    var zombie = {x : random(totalWidth ), y : random(totalHight ), speed: random(1,6)};
     function update(){
       clearScreen();
       fill("black")
-      circle(mouse.x, mouse.y, 30, "red");
-      circle(cat.x, cat.y, 30, "blue");
+      picture(zobmbie.x, zombie.y, "http://spelprogrammering.nu/bilder/zombie.png")
       if(keyboard.d){
         cat.x += cat.speed;
       }
