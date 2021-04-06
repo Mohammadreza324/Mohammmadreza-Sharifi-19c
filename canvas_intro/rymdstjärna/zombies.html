@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    /**/
     <script src="https://spelprogrammering.nu/simple.js">
-
-    var zombie = {x : random(totalWidth ), y : random(totalHight ), speed: random(1,6)};
-    function update(){
+    
+    var zombies = [];
+    
+    var i = 0;
+    while (i < 5)
+    {
+      zombies.push({x : random(totalWidth ), y : random(totalHeight ), speed: random(1,6)});
+      i += 1
+    }
+    hideMouse();
+    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5); 
+    /*fill("http://spelprogrammering.nu/bilder/plan")*/
+    function update()
+    {
+      
       clearScreen();
       fill("black")
-      picture(zobmbie.x, zombie.y, "http://spelprogrammering.nu/bilder/zombie.png")
-      if(keyboard.d){
-        cat.x += cat.speed;
-      }
-      if(keyboard.a){
-        cat.x -= cat.speed;
-      }
-      if(keyboard.w){
-        cat.y -= cat.speed;
-      }
-      if(keyboard.s){
-        cat.y+= cat.speed;
-      }
-      var d = distance(cat, mouse);
-      if ( d < 60){
-        text(50, 50, 20,"game over", "red")
-        showMouse();
-        stopUpdate();
-      }
+      var i = 0;
       
-      
+      while (i < 5)
+      {
+        
+        var zombie = zombies[i];
+        picture(mouse.x, mouse.y, "http://spelprogrammering.nu/bilder/kalkyl.png  ")
+
+        picture(zombie.x, zombie.y, "http://spelprogrammering.nu/bilder/zombie.png")
+         if (zombie.x < mouse.x)
+          zombie.x += zombie.speed;
+         else 
+          zombie.x -= zombie.speed;
+        
+         if (zombie.y < mouse.y)
+          zombie.y += zombie.speed;
+         else 
+          zombie.y -= zombie.speed;
+
+         if (distance(mouse, zombie) < 3)
+        {
+          alert("Game över");
+          stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
+          stopupdate();
+          showMouse();
+        }
+        i += 1
+      }
     }
       
       </script>
