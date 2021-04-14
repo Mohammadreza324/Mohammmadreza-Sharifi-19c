@@ -13,22 +13,23 @@
       i += 1
     }
     hideMouse();
-    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5); 
+    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
     /*fill("http://spelprogrammering.nu/bilder/plan")*/
     function update()
     {
-      
+
       clearScreen();
       fill("black")
+      
       var i = 0;
       
       while (i < 5)
       {
         
         var zombie = zombies[i];
-        picture(mouse.x, mouse.y, "http://spelprogrammering.nu/bilder/kalkyl.png  ")
+        picture(mouse.x, mouse.y, "run2.png ")
 
-        picture(zombie.x, zombie.y, "http://spelprogrammering.nu/bilder/zombie.png")
+        picture(zombie.x, zombie.y, "Lager 1.png")
          if (zombie.x < mouse.x)
           zombie.x += zombie.speed;
          else 
@@ -42,8 +43,8 @@
          if (distance(mouse, zombie) < 3)
         {
           alert("Game över");
-          stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
-          stopupdate();
+          stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01");
+          stopUpdate();
           showMouse();
         }
         i += 1
