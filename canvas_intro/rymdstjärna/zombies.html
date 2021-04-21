@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    /**/
-    <script src="https://spelprogrammering.nu/simple.js">
-    
-    var zombies = [];
-    
+  /**/
+  <script src="https://spelprogrammering.nu/simple.js">
+  
+  var zombies = [];
+  
+  var i = 0;
+  while (i < 5)
+  {
+    zombies.push({x : random(totalWidth ), y : random(totalHeight ), speed: random(1,6)});
+    i += 1
+  }
+  hideMouse();
+  playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
+
+  
+  function update()
+  {
+    clearScreen();
+    fill("black")
+
     var i = 0;
+    
     while (i < 5)
     {
-      zombies.push({x : random(totalWidth ), y : random(totalHeight ), speed: random(1,6)});
-      i += 1
-    }
-    hideMouse();
-    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
-    /*fill("http://spelprogrammering.nu/bilder/plan")*/
-    function update()
-    {
-
-      clearScreen();
-      fill("black")
+      picture(mouse.x, mouse.y, "run2 (1).png ")
+      picture(zombie.x, zombie.y, "Lager 1.png")
+      var zombie = zombies[i];
       
-      var i = 0;
-      
-      while (i < 5)
-      {
-        
-        var zombie = zombies[i];
-        picture(mouse.x, mouse.y, "run2.png ")
+      if (zombie.x < mouse.x)
+      zombie.x += zombie.speed;
+      else 
+      zombie.x -= zombie.speed;
+    
+      if (zombie.y < mouse.y)
+      zombie.y += zombie.speed;
+      else 
+      zombie.y -= zombie.speed;
 
-        picture(zombie.x, zombie.y, "Lager 1.png")
-         if (zombie.x < mouse.x)
-          zombie.x += zombie.speed;
-         else 
-          zombie.x -= zombie.speed;
-        
-         if (zombie.y < mouse.y)
-          zombie.y += zombie.speed;
-         else 
-          zombie.y -= zombie.speed;
-
-         if (distance(mouse, zombie) < 3)
-        {
-          alert("Game över");
-          stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01");
-          stopUpdate();
-          showMouse();
-        }
-        i += 1
+      if (distance(mouse, zombie) < 70){
+      alert("Game over");
+      stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01");
+      stopUpdate();
+      showMouse();
       }
+      i += 1
+      if (keyboard.space){
+      zombie.speed = zombie.speed*1.1
+      } 
     }
+  }
       
-      </script>
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
