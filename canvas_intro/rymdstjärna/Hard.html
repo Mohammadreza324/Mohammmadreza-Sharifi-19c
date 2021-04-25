@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://spelprogrammering.nu/simple.js">
+// Detta är hard mode med antalet 10 stycken zombies i spelet som har hastigheten mellan 1-5, det är lägre än det medium men i hard mode kommer att hastigheten öka med 20 procent när man klickar på space.
+    var zombies = []; 
+
+    var i = 0;
+    while (i < 10)
+    {
+        zombies.push({x : random(totalWidth ), y : random(totalHeight ), speed: random(1,5)});
+        i += 1
+    }
+    hideMouse();
+    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
+
+
+    function update(){
+        clearScreen();
+        fill("black")
+
+        var i = 0;
+
+        while (i < 10){
+            picture(mouse.x, mouse.y, "run2 (1).png ")
+            picture(zombie.x, zombie.y, "Lager 1.png")
+            var zombie = zombies[i];
+
+            if (zombie.x < mouse.x)
+            zombie.x += zombie.speed;
+            else 
+            zombie.x -= zombie.speed;
+
+            if (zombie.y < mouse.y)
+            zombie.y += zombie.speed;
+            else 
+            zombie.y -= zombie.speed;
+
+            if (distance(mouse, zombie) < 70){
+                alert("Game over");
+                stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01");
+                stopUpdate();
+                showMouse();
+            }
+                i += 1
+                if (keyboard.space){
+                zombie.speed = zombie.speed*1.2
+            } 
+        }
+    }
+      
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

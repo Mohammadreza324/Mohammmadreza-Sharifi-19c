@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://spelprogrammering.nu/simple.js">
+// I medium mode kommer det finnas 6 zomies med hastighet mellan 1 och 6 och varje gång man klickar på space så kommer man öka hastigheten med 10 procent. Det som gör det svårt antalet på zombies och vilket hastighet har de. 
+    var zombies = []; 
+
+    var i = 0;
+    while (i < 6)
+    {
+        zombies.push({x : random(totalWidth), y : random(totalHeight), speed: random(1,6)});
+        i += 1
+    }
+    hideMouse();
+    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
+
+    function update(){
+        clearScreen();
+        fill("black")
+
+        var i = 0;
+
+        while (i < 6){
+            picture(mouse.x, mouse.y, "run2 (1).png ")
+            picture(zombie.x, zombie.y, "Lager 1.png")
+            var zombie = zombies[i];
+
+            if (zombie.x < mouse.x)
+            zombie.x += zombie.speed;
+            else 
+            zombie.x -= zombie.speed;
+
+            if (zombie.y < mouse.y)
+            zombie.y += zombie.speed;
+            else 
+            zombie.y -= zombie.speed;
+
+            if (distance(mouse, zombie) < 70){
+                alert("Game over");
+                stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01");
+                stopUpdate();
+                showMouse();
+            }
+                i += 1
+                if (keyboard.space){
+                zombie.speed = zombie.speed*1.1
+            } 
+        }
+    }
+      
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
