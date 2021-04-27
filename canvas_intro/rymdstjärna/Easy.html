@@ -12,22 +12,23 @@
         zombies.push({x : random(totalWidth ), y : random(totalHeight ), speed: random(1,4)});
         i += 1
     }
-    hideMouse();
-    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);
+// här ovan så gör jag en tom lista av zombies och sedan väljer jag värdet till variabel i för noll för att använda det i while sats som kommer efter. I while sats så säger jag att tills variabeln (i) är mindre än 4 ska ska den lägga till en zombie och sedan öka (i) med 1.
+    hideMouse(); /* Hide mouse är en fiúnktion som finns i biblioteket vilket gömmer musen under spelet sedan visas det upp igen om man skriver showmouse i slutet*/
+    playSound("http://spelprogrammering.nu/ljud/musik/Commando_01", 0.5);/* playsound är också tagen från biblioteket vilket spelat upp den musiken man har länkat och sedan väljer man volymen också i slutet. Men i detta fall det spelas inte när det ska spelas, det spelas up när man har dött ibland*/
 
 
-    function update(){
+    function update(){ /* i function update kommer zombies och musen att markers och att zombies ska följa musee. Man använder clearscreen för att att skärmen ska uppdateras*/
         clearScreen();
-        fill("black")
+        fill("black")/* ändrar backgrunden till svart*/
 
         var i = 0;
 
-        while (i < 4){
-            picture(mouse.x, mouse.y, "run2 (1).png ")
-            picture(zombie.x, zombie.y, "Lager 1.png")
+        while (i < 4){ /*while sats som säger att till variabel (i) är mindre än 4 ska alla rader nedan ske sedan ökad (i) med 1*/
             var zombie = zombies[i];
+            picture(mouse.x, mouse.y, "run2(1).png ") /* Bilden för muse sätts in här */
+            picture(zombie.x, zombie.y, "Lager1.png")/*bilden för zombies*/
 
-            if (zombie.x < mouse.x)
+            if (zombie.x < mouse.x)/*Här codar man att zombie ska gå efter musen, till exempel om x på zombie är mindre än x på musen ska zombies x öka men zombie speed annars ska det minska. */
             zombie.x += zombie.speed;
             else 
             zombie.x -= zombie.speed;
@@ -37,15 +38,15 @@
             else 
             zombie.y -= zombie.speed;
 
-            if (distance(mouse, zombie) < 70){
-                alert("Game over");
-                stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01");
-                stopUpdate();
-                showMouse();
+            if (distance(mouse, zombie) < 70){/*Om avståndet mellan en zombie och musen blir mindre än 70 så dör man och coden som kommer under händer efter det*/
+                alert("Game over");/*Det döker upp en text*/
+                stopSound("http://spelprogrammering.nu/ljud/musik/Commando_01");/*Musiken pausas*/
+                stopUpdate();/*Slutar uppdaterar skärmen*/
+                showMouse();/*och till slut musen visas*/
             }
                 i += 1
-                if (keyboard.space){
-                zombie.speed = zombie.speed*1.05
+                if (keyboard.space){/*Här lägger jag en function på space med hjälp av biblioteket att när man klickar på space kommer att variabel zombie.speed som varje zombie har ökas med 5% efter varje klick*/
+                zombie.speed = zombie.speed*1.05/*zombies fart kommer öka med 5% varje gång man klikar på space */
             } 
         }
     }
@@ -54,7 +55,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reza & Zombies</title>
 </head>
 <body>
     

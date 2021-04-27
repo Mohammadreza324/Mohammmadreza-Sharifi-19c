@@ -25,9 +25,9 @@
     
     while (i < 5)
     {
+      var zombie = zombies[i];
       picture(mouse.x, mouse.y, "run2(1).png ")
       picture(zombie.x, zombie.y, "Lager1.png")
-      var zombie = zombies[i];
       
       if (zombie.x < mouse.x)
       zombie.x += zombie.speed;

@@ -3,7 +3,7 @@
 <head>
     <script src="https://spelprogrammering.nu/simple.js">
 // Detta är hard mode med antalet 10 stycken zombies i spelet som har hastigheten mellan 1-5, det är lägre än det medium men i hard mode kommer att hastigheten öka med 20 procent när man klickar på space.
-    var zombies = []; 
+    var zombies = [];
 
     var i = 0;
     while (i < 10)
@@ -22,9 +22,9 @@
         var i = 0;
 
         while (i < 10){
-            picture(mouse.x, mouse.y, "run2 (1).png ")
-            picture(zombie.x, zombie.y, "Lager 1.png")
             var zombie = zombies[i];
+            picture(mouse.x, mouse.y, "run2(1).png ")
+            picture(zombie.x, zombie.y, "Lager1.png")
 
             if (zombie.x < mouse.x)
             zombie.x += zombie.speed;
@@ -53,7 +53,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reza & Zombies</title>
 </head>
 <body>
     
